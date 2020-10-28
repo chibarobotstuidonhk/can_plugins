@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+  <arg name="manager_name" default="nodelet_manager" />
+  <arg name="nodelet_mode" default="standalone" /><!-- set to standalone if you want to use as node-->
+  
+  <node pkg="nodelet" type="nodelet" name="ping" 
+  args="$(arg nodelet_mode) can_plugins/Ping $(arg manager_name)" output="screen">
+    <param name="ctrl_freq" value="2000"/>
+    <param name="id_tx" value="1240"/>
+  </node>    
+</launch>

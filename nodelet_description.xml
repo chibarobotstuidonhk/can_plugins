@@ -1,0 +1,17 @@
+<library path="lib/libcan_plugins">
+  <class name="can_plugins/Md201xNode" type="can_plugins::Md201xNode" base_class_type="nodelet::Nodelet">
+    <description>md201x_node</description>
+  </class>
+
+  <class name="can_plugins/Ping" type="can_plugins::Ping" base_class_type="nodelet::Nodelet">
+    <description>ping</description>
+  </class>
+
+  <class name="can_plugins/SlcanBridge" type="can_plugins::SlcanBridge" base_class_type="nodelet::Nodelet">
+    <description>slcan_bridge</description>
+  </class>
+
+  <class name="can_plugins/CanHandler" type="can_plugins::CanHandler" base_class_type="nodelet::Nodelet">
+    <description>can_handler</description>
+  </class>
+</library>
